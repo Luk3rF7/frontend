@@ -1,0 +1,119 @@
+:root{
+    --input-linear:linear-gradient(120deg, #2980b9, #2c3e50);
+    --input-erro:red;
+    --button-linear:linear-gradient(120deg, #2980b9, #2c3e50,#2980b9 );
+    --button-disabled:#acac;
+    --button-sucess:rgd(18, 151, 107);
+    --white:#fff;
+    --black:#303030;
+    --gray:#929292;
+    --light-gray: #cfcfcf;
+}
+
+
+.container {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container header {
+    width: 50%;
+    margin: 84px 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.container header img {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    margin-left: 7px;
+}
+
+.container header div {
+    display: flex;
+    align-items: center;
+}
+
+.container input {
+    width: 50%;
+    padding: 24px;
+    margin-bottom: 10px ;
+
+    background:  #E6E6E6;
+    border-radius: 5px;
+    border:none;
+
+    font-size: 16px;
+
+}
+
+.login__input-border {
+    height: 1px;
+    width:100%;
+    margin-bottom: 16px;
+    background-color:var(--light-gray);
+    transition: .3sec ease-in-out;
+}
+
+.login__input-border::after {
+
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0px;
+    margin-bottom: 16px;
+    background:var(--input-linear);
+
+}
+
+.login__input:focus + .login__input-border::after{
+    width: 100%;
+}
+
+.login__input-border.error {
+    background: var(--input-erro);
+}
+
+.login__submit {
+  width: 25%;
+  padding:24px ;
+    outline: none;
+    background:var(--button-linear);
+    background-size: 200%;
+    margin-bottom: 32px;
+    color:var(--white);
+    font-size: 16px;
+    font-weight: bold;
+    border:unset;
+    border-radius: 4px;
+    cursor:pointer;
+    transition:.5s ease-in-out;
+}
+
+.login__submit:disabled {
+    background-color: var(--button-disabled);
+    cursor:not-allowed;
+}
+
+.login__submit:hover {
+    background-position: right;
+}
+
+.login__submit.error {
+    background:var(--input-erro);
+}
+
+.login__submit.sucess {
+    background:var(--input-sucess);
+
+}
+
+.login__reset {
+    font-size: 12px;
+    color:var(--gray);
+    text-decoration: none;
+}
