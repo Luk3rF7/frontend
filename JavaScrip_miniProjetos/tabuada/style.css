@@ -1,0 +1,64 @@
+body{
+   background: var(--color--sky);
+    font: normal 15pt Arial;
+    text-align: center;
+    color:var(--text--color);
+}
+:root{
+    --color--sky:#537FE7;
+    --color-cya:#66d8e3;
+    --text--color:#181823;
+
+}
+
+input{
+    color:black;
+    border: 1px 1px 1px var(--color-cya);
+    border-radius: 25px;
+    box-shadow: 2px 2px 0px 0px gray; 
+    font-size: medium;
+    font: bold 12pt Arial;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+select{
+    border-radius: 20px;
+    width: 200px;
+    height: auto;
+    text-align: center;
+    background:rgb(205, 227, 228);
+    color:black;
+    border: none;
+    font: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow:  4px 4px 0px 0px black;
+    overflow: hidden;
+}
+
+.btn_tabuada:active{
+    background-color: silver;
+    color:black;
+    border:black 1px solid;
+    box-shadow: 4px 4px 0px 0px black;
+
+}
+header{
+text-align: center;
+}
+
+section{
+    background:var(--color-cya);
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin:auto;
+    box-shadow: 5px 5px 0px 0px rgba(15, 16, 16, 0.846);
+    
+    
+}
+
+footer{
+font-style: italic;
+text-align: center;
+}
