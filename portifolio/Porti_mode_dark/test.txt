@@ -1,0 +1,43 @@
+//Tema escuro
+
+// verifica o tema selecionado em localStorage
+let theme = localStorage.getItem("theme");
+
+const themeToggle = document.getElementById("theme-toggle");
+
+const enableDarkTheme = () => {
+    // Adiciona a classe de tema escuro ao corpo
+    document.body.classList.add("dark-theme");
+    // altera o ícone de alternância do tema
+    themeToggle.classList.replace("ri-moon-line", "ri-sun-line");
+    // atualiza o tema selecionado em localStorage
+    localStorage.setItem("theme", "dark-theme");
+};
+
+const disableDarkTheme = () => {
+    // remove a classe de tema escuro do corpo
+    document.body.classList.remove("dark-theme");
+    // altera o ícone de alternância do tema
+    themeToggle.classList.replace("ri-sun-line", "ri-moon-line");
+    // atualiza o tema selecionado em localStorage
+    localStorage.setItem("theme", null);
+};
+
+
+// verifica se o usuário habilitou anteriormente o tema escuro
+// para carregar o tema escuro
+
+if (theme === "dark-theme") {
+    enableDarkTheme();
+}
+// adiciona evento de tema de alternância
+
+themeToggle.addEventListener("click", () => {
+    // pega o tema selecionado
+    theme = localStorage.getItem("theme");
+    if (theme !== "dark-theme") {
+        enableDarkTheme();
+    } else {
+        disableDarkTheme();
+    }
+});
