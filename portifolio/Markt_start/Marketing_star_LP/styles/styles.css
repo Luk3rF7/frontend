@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Mochiy+Pop+One&family=Poppins:ital,wght@0,500;0,700;0,900;1,900&family=Roboto:wght@500&family=Source+Code+Pro:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:ital,wght@0,500;0,700;0,900;1,900&family=Roboto:wght@500&family=Rubik+Vinyl&family=Source+Code+Pro:wght@500&display=swap');
+body{
+    background-color: #aa8ed6;
+    color: black;
+    font-family: poppinsregular;
+    max-width: 1200px ;
+    margin: 0 auto;
+    padding:20px; 
+}
+
+
+
+header {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+
+}
+#title{
+    
+    flex-direction: column;
+    line-height:  20px;
+   
+}
+
+.ti{
+    display:flex;
+    flex-direction:column;
+    font-family: 'Anton', sans-serif;
+    font-size: 60px; 
+    color:rgb(105, 9, 105);
+    margin: 45px;
+
+}
+.li {
+    display: inline-block;
+    margin:20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 150%;
+}
+
+a{
+    color: rgb(63, 1, 63);
+}
+
+a:hover {
+    color: blueviolet;
+    transition:0.3s all;
+}
+
+#inscreva-se-btn {
+    border:3px solid rgb(69, 6, 69);
+    padding: 5px;
+    border-radius: 20px; 
+}
+
+#inscreva-se-btn:hover{
+    background-color: rgb(63, 1, 63);
+    color:#aa8ed6;
+}
+
+h1 {
+    font-weight: 200;
+    margin:20px;
+   
+}
+
+main {
+    display:flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 45px;
+    line-height: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+span {
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 60px;
+    color:rgb(63, 1, 63);
+    transition:0.3s all;
+}
+
+span:hover {
+    background:#aa8ed6;
+    color:blueviolet;
+    cursor:pointer;
+}
+
+p{
+    line-height: 40px;
+    max-width: 400px;
+   font-family:Arial, Helvetica, sans-serif;
+   font-size: 20px;
+}
+
+img {
+    width: 550px;
+    margin-left: 15%;
+    box-shadow: black;
+    border-radius: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+form [type="submit"]{
+    height: 55px;
+    width: 60%;
+    background-color:blueviolet ;
+    color: #aa8ed6;
+    font-weight: bold;
+}
+
+form [type="submit"]:hover{
+    cursor:pointer;
+    background-color: rgb(63, 1, 63);
+    color:#aa8ed6;
+}
+
+input {
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 25px;
+    border:none;
+    font-size: 15px;
+}
