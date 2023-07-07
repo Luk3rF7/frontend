@@ -1,0 +1,118 @@
+*{
+    margin:0;
+}
+
+
+header{
+    padding: 10px;
+    background: lightgray;
+    margin-top: 1px 1px 1px 1px black;
+}
+
+nav {
+    display:flex;
+    justify-content:space-between;
+    padding: 10px;
+    align-items: center;
+
+}
+
+.img{
+    width: 9.8%;
+}
+
+a {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 8rem;
+    color:black;
+}
+
+a:hover {
+    color: lightgray;
+    transition:0.3s all;
+}
+
+
+.li1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+
+}
+
+.li1:hover {
+    background: lightgray;
+    color: black;
+    border-bottom: 2px solid rgb(17, 1, 1) ;
+    transition: 0.5s ease-in-out;
+
+}
+
+.container {
+    display: flex;
+    gap:1rem;
+    background: lightgray;
+}
+
+aside, main {
+    border: 1px;
+    height: 95vh;
+    background: lightgray;
+
+}
+
+aside {
+    flex-basis:20%;
+}
+
+main {
+    flex:2;
+    background: lightgray;
+}
+
+.imgGaleria {
+    width: 24%;
+    height:auto;
+    background:whitesmoke;
+    border: 1px 1px solid silver;
+    border-radius: 35px;
+}
+
+.Galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .8rem;
+    justify-content:space-between;
+    background: lightgray;
+}
+
+.field1 {
+    background: whitesmoke;
+}
+
+.contato {
+    background: whitesmoke;
+    border: 1px 1px solid black;
+}
+.nomeF {
+    background: whitesmoke;
+}
+
+.rodape {
+    margin-top: auto;
+    background: lightgray;
+    
+    height: 8rem;
+    flex:1;
+    display:flex;
+   align-items: center;
+   justify-content: space-evenly;
+   
+
+}
+
+.social {
+    height: 45%;
+    width: auto;
+}

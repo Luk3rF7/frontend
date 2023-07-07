@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="desafio.css">
+    <title>Projeto 1</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img class="img" src="./img/Address-pana.png" alt="logo">
+            
+                <a href="/Html/Projeto/index.html" class="li1">Home</a>
+                <a href="/Html/Tabela/tabelaComplexa.html" class="li1"> Vendedores</a>
+                <a href="/Html/Projeto/Contatos.html" class="li1">contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <aside class="fundo">
+            <nav>
+                <form action="">
+                    <fieldset class="field1">
+                        <legend class="contato">Contato</legend>
+
+                        <label class="nomeF" for="name">Nome</label>
+                        <br>
+                        <input id="name" type="text" name="name" placeholder="Nome">
+                        <br>
+                        <br>
+
+                        <label class="nomeF" for="email">Email</label>
+                        <br>
+                        <input id="email" type="email" name="email" placeholder="E-Mail">
+                        <br>
+                        <br>
+                        <label class="nomeF" for="senha">Senha</label>
+                        <br>
+                        <input type="password" pattern="[0-9a-fA-F]{4,8}"
+                            title="coloque hex no minimo 4 caracteres e no máximo 8 caracteres" placeholder="Senha">
+                        <br>
+                        <br>
+
+                        <label class="nomeF" for="message">Mensagem</label>
+                        <br>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                        <br>
+                        <br>
+                        <button type="submit">Enviar</button>
+                    </fieldset>
+                </form>
+            </nav>
+            <br>
+
+        </aside>
+
+        <main>
+            <nav>
+                <input type="text" list="fruistdata" placeholder="escolha uma folha" />
+
+                <datalist id="fruistdata">
+                    <option>APPLE</option>
+                    <option>BANANA</option>
+                    <option>MANGO</option>
+                    <option>ORANGE</option>
+                    <option>CHERRY</option>
+                </datalist>
+
+                <datalist id="colordata">
+                    <option>#fff000</option>
+                    <option>#00ff00</option>
+                </datalist>
+
+                <input type="color" list="fruistdata"/>
+            </nav>
+            <nav>
+                <div class="Galeria">
+                    <img class="imgGaleria" src="./img/vendecar.png" alt="">
+                    <img class="imgGaleria" src="./img/vendedor.png" alt="">
+                    <img class="imgGaleria" src="./img/checkcar.png" alt="">
+                    <img class="imgGaleria" src="./img/careletric.png" alt="">
+                    <img class="imgGaleria" src="./img/car1.png" alt="">
+                    <img class="imgGaleria" src="./img/cargps.png" alt="">
+                    <img class="imgGaleria" src="./img/aprovado.png" alt="">
+                    <img class="imgGaleria" src="./img/carpeça.png" alt="">
+                </div>
+            </nav>
+        </main>
+    </div>
+<footer class="rodape">
+    <img class="social" src="./img/instagram.png" alt="instagran">
+    <img class="social" src="./img/twitter.png" alt="twitter">
+    <img class="social" src="./img/whatsapp.png" alt="whats">
+</footer>
+</body>
+
+</html>
+
+<script>
+
+</script>
