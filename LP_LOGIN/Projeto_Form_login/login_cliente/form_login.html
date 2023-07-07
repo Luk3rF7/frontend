@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login </title>
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/907c7867aa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <!-- Css import  -->
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<header>
+    <div class="header_login">
+    <h1>Acesso a Login</h1>
+        <nav class="link_nav">      
+          <a href="./html/cadastro_cliente/form_cadastro.html">Cadastra-se</a>
+        </nav>
+    </div>
+</header>
+<main>
+<body>
+  <div class="form_login">
+    <h1> Login </h1>
+     <form id="form_login">
+        <label>Usuario</label>
+        <input type="usuario" name="usuario" id="usuario" placeholder="Digite seu Usuario" autocomplete="off">
+        <label>Senha:</label>
+        <input type="password"  name="senha" id="senha"placeholder="Digite sua senha" data-min-length="4">
+        <a href="./html/forgot_cliente/forgot.html" id="forgot-pass"> Esqueceu a senha?</a>
+        <input type="submit" value="Login" id="btn_login"> 
+    </form>
+    <div class="social_container">
+            <p>Logue com sua Rede Social </p>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-google"></i>
+           </div>
+           <div class="cadastro_container">
+            <p>Ainda não tem Cadastro? </p>
+             <a href="./html/cadastro_cliente/form_cadastro.html"> Registre-se aqui !</a>
+           </div>
+     </div>
+     <p class="error_validation template"></p>
+<!-- <p class="sucess_validation template"></p> -->
+</body>
+</main>
+
+        <footer>
+            <div class="footer-rodape">
+                <h1>rodape</h1>
+            </div>
+        </footer>
+        <script src="./js/login.js"></script>
+</html>

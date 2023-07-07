@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Cadastro</title>
+    <!-- icons import -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <!-- Css import-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<header>
+    <div class="header_login">
+    <h1>Cadastro para acessar</h1>
+        <nav class="link_nav">      
+          <a href="../../form_login.html">Home</a>
+        </nav>
+    </div>
+</header>
+<body>
+    <div id="main_container">
+    <h1>Preencha com dados </h1>
+ <form id="register_form">
+<div class="full_box">
+    <label for="email">E-mail:</label>
+    <input type="email" name="email" id="email" placeholder="Digite Seu E-mail" data-min-length="3" data-email-validate>
+</div>
+<div class="half_box spacing">
+    <label for="Nome">Nome:</label>
+    <input type="text" name="nome" id="nome" placeholder="Digite Seu nome" data-required data-min-length="3" data-max-length="16">
+</div>
+<div class="half_box">
+    <label for="lastname">Sobrenome:</label>
+    <input type="text" name="lastname" id="lastname" placeholder="Digite Seu Sobrenome" data-required data-only-letters>
+</div>
+<div class="half_box spacing">
+    <label for="password">Senha:</label>
+    <input type="password" name="password" id="password" placeholder="Digite Sua senha" data-password-validate data-required>
+</div>
+<div class="half_box">
+    <label for="passconfirmation">comfirme sua senha:</label>
+    <input type="password" name="passconfirmation" id="passconfirmation" placeholder="comfirme sua senha" data-equal="password">
+</div>
+<div class="full_box">
+    <label for="agreement" id="agreement_label"><input type="checkbox" name="agreement" id="agreement" placeholder="Digite Seu E-mail">Eu li e aceito os  <a href="#">termos de uso</a></label>
+    
+</div>
+<div class="full_box">
+ <input type="submit" value="Registrar" id="btn_submit">
+</div>
+ </form>
+</div>
+<p class="error_validation"></p>
+
+
+    <script src="./js/javaScript.js"></script>
+</body>
+</html>

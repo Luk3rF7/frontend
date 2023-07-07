@@ -1,0 +1,168 @@
+/*  Reset Css */
+*{
+    margin:0;
+    padding: 0;
+    font-family:helvetica;
+    box-sizing:border-box;
+    border:none;
+}
+input,label{
+    display:block;
+    width: 100%;
+}
+
+input:focus,label:focus{
+    outline: none;
+}
+.link_nav a{
+    color:#FFF;
+    outline: none ;
+    overflow: hidden;
+    text-decoration: none;
+    justify-content: end;
+    font-weight: bold;
+}
+
+a{
+    color:#085588;
+}
+body{
+    background-image:url('../img/cadastro.jpg');
+    background-size: cover;
+  /*   background-position-y:-150px ; */
+}
+/*  header style 
+*/
+header h1{
+display: flex;
+justify-content: center;
+
+}
+header{
+    margin-top: 0;
+    padding-top: 0;
+    background-color: #323232af;
+    box-shadow: 0px 1px 0px 0px #919191;
+    color: #FFF;
+}
+.header_login h1{
+    text-align: center;
+    margin-left: 150px;
+    margin-right: auto;
+}
+.header_login{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center; 
+    color:#FFF;
+    border-bottom: 0 2px 2px 0px solid #919191;
+    padding: 10px;
+    margin-left:400px;
+}
+.nav_link a{
+    display: block;
+    justify-content:end;
+    align-items: end;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* main container / form */
+
+#main_container{
+    width: 600px;
+    margin-left: auto;
+    margin-right:auto ;
+    background-color: #FFF;
+    margin-top: 100px;
+    padding:25px;
+    border-radius: 10px;
+}
+
+#main_container h1{
+       text-align: center;
+       border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+       margin-bottom: 25px;
+       font-size:1,6rem;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.full_box{
+    flex: 1 1 100%;
+    position:relative;
+}
+
+.half_box{
+    flex: 1 1 45%;
+    position:relative;
+}
+
+.spacing{
+    margin-right: 2.5%;
+}
+label {
+    font-weight: bold;
+    font-size: .8rem
+}
+
+input{
+border-bottom:1px solid #08558878;
+border-radius:25px;
+padding:8px;
+font-size:.9rem;
+margin-bottom: 40px;
+}
+input:hover{
+    border-bottom:2px solid #085588f9;
+    transition: .3s;
+    box-shadow: 0px 1px 1px 0px #085588;
+}
+input:focus{
+ 
+    border-bottom: 1px solid #085588 ; 
+}
+
+input[type="submit"]{
+    width: 250px;
+    height: 50px;
+    margin-left:auto ;
+    margin-right:auto ;
+    background-color: #085588;
+    color:#FFF;
+    border-bottom: 1px solid #085588;
+    border-radius: 40px;
+    cursor:pointer;
+
+}
+input[type="submit"]:hover{
+    background-color: #FFF;
+    color:#085588;
+    border:1px solid #085588d8;
+    transition: .3s;
+}
+#agreement {
+    margin-right: 5px;
+}
+#agreement,#agreement-label a{
+    display:inline-block;
+    width: auto;
+}
+
+
+/* validar */
+.error_validation{
+    color:red;
+    position: absolute;
+    top:57px;
+    font-size: .8rem;
+}
+.template{
+    display: none;
+}

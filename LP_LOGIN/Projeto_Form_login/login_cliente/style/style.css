@@ -1,0 +1,176 @@
+/* reset Css */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+  /*   color: #323232; */
+    border:none;
+}
+textarea:focus,input:focus{
+    outline:none;
+}
+a{
+    
+    font-size: 18px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+}
+label{
+    font-size: .8rem;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    color:#085588;
+}
+/*  header style */
+header h1{
+display: flex;
+justify-content: center;
+
+}
+header{
+    margin-top: 0;
+    padding-top: 0;
+    background-color: #32323270;
+    box-shadow: 0px 1px 0px 0px #919191;
+    color: #FFF;
+}
+
+.header_login{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    color:#FFF;
+    border-bottom: 0 2px 2px 0px solid #919191;
+    padding: 10px;
+    margin-left:400px;
+}
+.nav_link a{
+    display: block;
+    justify-content:end;
+    align-items: end;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* body */
+body{
+    background-image:url('../img/img.jpg');
+    background-size: cover;
+}/* container */
+
+.form_login{
+    border-top:1px solid #919191;
+    background-color:  #FFF;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:20px 30px;
+    margin-top: 10vh;
+    border:1px solid #323232;
+    border-radius: 12px;
+    box-shadow: 1px 2px 2px 0px #919191;
+    text-align: center;
+}
+
+/* form */
+
+form {
+    margin-top: 30px;
+    margin-bottom:40px;
+}
+
+
+label,input {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+}
+
+input{
+    border-bottom: 1px solid #32323241;
+    border-radius: 8px;
+    padding: 10px;
+    font-size:1rem;
+    margin-bottom: 20px;
+}
+input:focus{
+    border-bottom:2px solid #181818a1;
+}
+
+input[type="submit"]{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 15px;
+    border: none;
+    border-bottom: 2px solid #323232;
+    background-color: #54535374;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background: #323232af;
+    color:#FFF;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px 2px solid #323232;
+    transition: .5s;
+}
+#forgot-pass {
+    margin-bottom: 2px;;
+    text-align:right;
+    display: block;
+}
+
+/*  Rede Social */
+
+.social_container,.social_container p{
+    margin-bottom: 20px;
+}
+
+.social_container i{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    cursor:pointer;
+}
+
+.fa-facebook{
+background-color: #085588;
+    color:#FFF
+}
+.fa-instagram{
+  background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+color:#FFF;
+  }
+.fa-google {
+  background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  border: 1px solid black;
+}
+
+/* registrar */
+
+.cadastro_container{
+    margin-bottom:10px;
+}
