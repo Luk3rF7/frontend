@@ -1,0 +1,66 @@
+:root {
+  --primary--color: #a3c7d6;
+  --secundary-color: #400d51;
+  --color--terceira: #fb2576;
+  --color--text: #c9c9c9;
+  --color: #5d2596;
+}
+
+.task-container {
+  display: flex;
+  background-color: #5d2596;
+  margin: 8px 0;
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: 1px solid #c9c9c9;
+  justify-content: space-between;
+  /* color: var(--color--text); */
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  align-items: center;
+}
+.task-container:hover {
+  font-weight: bold;
+  color: #919394;
+  transition: 0.1s ease;
+  box-shadow: 2px 2px 0 0 var(--color--text);
+  border: 1px solid black;
+  cursor: pointer;
+}
+.button_container {
+  display: flex;
+  justify-content: flex-end;
+  width: 30%;
+}
+.task_title {
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.remove-task-button {
+  background-color: #5d2596;
+  font-size: 30px;
+  border: none;
+  color: #919394;
+  border-radius: 50px;
+  margin: 0 5px;
+}
+.remove-task-button:hover {
+  color: #fb2576;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.detail-task {
+  background-color: #5d2596;
+  font-size: 30px;
+  border: none;
+  color: #919394;
+  margin: 0 5px;
+}
+.detail-task:hover {
+  color: #fb2576;
+  font-weight: bold;
+  cursor: pointer;
+}

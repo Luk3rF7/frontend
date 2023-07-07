@@ -1,0 +1,36 @@
+:root {
+  --primary--color: #a3c7d6;
+  --secundary-color: #400d51;
+  --color--terceira: #fb2576;
+  --color--text: #c9c9c9;
+  --color: #5d2596;
+}
+.task-details-container {
+  background: var(--color);
+  margin: 15px 0;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  color: #eee;
+  border-radius: 8px;
+  border: 2px solid var(--color--text);
+}
+
+.task-details-container:hover {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  box-shadow: 6px 4px 0 0 var(--primary--color);
+  transition: 1.5s ease-in-out;
+  cursor: pointer;
+  border: 2px solid black;
+}
+.task-details-container h2 {
+  margin-bottom: 5px;
+  color: var(--color--text);
+}
+
+.back-button-container {
+  width: 30%;
+  margin-top: 10px;
+}

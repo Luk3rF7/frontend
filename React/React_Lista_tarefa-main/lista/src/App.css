@@ -1,0 +1,24 @@
+:root {
+  --primary--color: #a3c7d6;
+  --secundary-color: #400d51;
+  --color--terceira: #fb2576;
+  --color--text: #c9c9c9;
+}
+
+.container {
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 2px solid var(--primary--color);
+  border-radius: 8px;
+  box-shadow: 3px 3px 2px 2px var(--color--terceira);
+  padding: 30px;
+  color: var(--color--text);
+}
+
+.container::hover {
+  transition: 8s ease;
+  border: 2px solid #d800a6;
+  box-shadow: 6px 6px 0 0 #31e1f7;
+}

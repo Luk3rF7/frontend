@@ -1,0 +1,29 @@
+:root {
+  --primary--color: #a3c7d6;
+  --secundary-color: #400d51;
+  --color--terceira: #fb2576;
+  --color--text: #c9c9c9;
+}
+
+.add_task_container {
+  margin: 15px 0;
+  width: 100%;
+  display: flex;
+}
+
+.add_task_input {
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: none;
+  flex: 2;
+  background-color: #5d2596;
+  border: 1px solid #a3c7d6;
+  color: #eee;
+  font-size: 16px;
+}
+
+.add_button_container {
+  margin-left: 10px;
+  flex: 1;
+}

@@ -1,0 +1,27 @@
+:root {
+  --primary--color: #a3c7d6;
+  --secundary-color: #400d51;
+  --color--terceira: #fb2576;
+  --color--terceiro: #920e41;
+  --color--text: #c9c9c9;
+}
+
+.add_task_button {
+  background-color: var(--color--terceira);
+  color: var(--color--text);
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #f73d93;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.add_task_button:hover {
+  background: linear-gradient(45deg, #f73d93 50%, #ee1b7e 100%);
+  color: black;
+  transition: 1.2s ease;
+  border: 2px solid var(--primary--color);
+}
