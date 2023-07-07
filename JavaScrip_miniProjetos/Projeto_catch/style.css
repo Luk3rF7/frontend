@@ -1,0 +1,125 @@
+/*  imports fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+/*  variaveis color */
+:root {
+    --Text-color:#000000 ;
+    --Body-color:#df7a7a;
+    --container-color:#FFDEB4;
+    --boxShadow-container:rgb(248, 217, 61);
+    --msg-color: #fc8200;
+    --button-color: #e68c8c;
+    --btn--txt-color: #f3f3f3;
+    --btn-refresh-color: #fcc8c8;
+}   
+/*  reset Css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Poppins",sans-serif
+}
+
+/*  custom body  */
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background:var(--Body-color);
+}
+
+/* custom container Captcha */
+
+.container{
+    position:relative;
+    max-width:400px;
+    width: 100%;
+    border-radius:12px;
+    border:1px solid #fcc378;
+    padding:15px 25px 25px;
+    box-shadow:0 5px 10px var(--boxShadow-container);
+    background-color: var(--container-color);
+}
+
+/*  custom header */
+header {
+    color:var(--Text-color);
+    margin-bottom: 20px;
+    font-size:18px;
+    font-weight:600;
+    text-align:center;
+}
+/*  custom inputs / button / field */
+.input_field{
+    height:45px;
+    margin-top: 15px;
+    width:100%;
+}
+.refresh_button{
+    position:absolute;
+    bottom: 78%;
+    right:33px;
+    transform:translateY(-50%);
+    background: var(--button-color);
+    height: 30px;    
+    width: 30px;    
+    border:1px solid; 
+    border-radius: 4px;
+    color:var(--btn-refresh-color);
+    cursor:pointer;
+    user-select: none;
+}
+
+.refresh_button:active{
+    transform:translateY(-50%) scale(0.98);
+}
+.input_field input,
+.button button{
+    width:100%;
+    height:100%;
+    outline:none;
+    border:none;
+    border-radius: 8px;
+    user-select:none;
+}
+
+.input_field input{
+    padding: 0 15px;
+    border: 1px solid rgba(0,0,0,0.1);
+
+}
+
+.captch_box input{
+    color:#ffb554;
+    font-size:22px;
+
+}
+.captch_input input:focus{
+    box-shadow: 0 1px rgb(255, 181, 84);
+}
+
+.msg {
+    font-size:10px;
+    margin:14px 0;
+    padding:5px;
+    font-weight: 400;
+    background-color: #ffe6c6;
+    border:1px solid #f88102;
+    border-radius: 10px;
+    color:var(--msg-color);
+    display: none; 
+}
+.msg.active{
+    display:block;
+}
+.button button{
+ background-color: var(--button-color);
+ color:var(--btn--txt-color);
+ cursor:pointer;
+}
+.button button:active{
+transform:scale(0.99);
+border:5px transparent black;
+box-shadow:0 8px 8px var(--Body-color);
+}
+

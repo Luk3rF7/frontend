@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto catch generation</title>
+    <link rel="stylesheet" href="./style.css" class="style cc">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+<body>
+    <div class="container">
+        <header>Capctha Generator</header>
+
+        <div class="input_field captch_box">
+            <input type="text" id="bloquear-selecao" value="" disabled>
+            <button class="refresh_button">
+                <i class="fa-solid fa-rotate-right"></i>
+            </button>
+        </div>
+
+        <div class="input_field captch_input">
+            <input type="text" placeholder="digite captch">
+        </div>
+        <div class="msg"></div>
+        <div class="input_field button disabled">
+            <button>Enviar Captcha</button>
+        </div>
+    </div>
+     <script src="./js/generation.js"></script> 
+
+</body>
+</html>
